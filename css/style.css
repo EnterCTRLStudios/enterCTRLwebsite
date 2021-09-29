@@ -398,9 +398,10 @@ a:hover {
 #about h3 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
-	font-size: 1.75vw;
+	font-size: 1.7vw;
 	line-height: 2.6vw;
-	color: #161616;
+	letter-spacing: 0;
+	color: #2c2c2c;
 
 	margin: 0 0 0 0;
 }
@@ -922,7 +923,7 @@ a:hover {
 	transition: 0.15s ease-in-out;
 }
 
-#nav-overlay .nav-contents a:hover {
+.mob-a-active {
 	animation: shake 0.2s;
 	color: #ff2525;
 	text-shadow: 0 0 20px #ff2525;
@@ -944,7 +945,7 @@ a:hover {
 	transition: 0.15s ease-in-out;
 }
 
-#nav-overlay .nav-contents a:hover i {
+.mob-i-active {
 	color: #ffacac;
 	text-shadow: 0 0 15px #ffacac;
 	font-size: 10vw;
