@@ -10,7 +10,7 @@ var hideNavOnScrollDist = 100;
 
 var staticNavHeight = 0;
 var fixedNavHeight = 0;
-var delayNav = 150;
+var delayNav = 175;
 
 document.addEventListener("DOMContentLoaded", function () {
   //Is this a mobile page?

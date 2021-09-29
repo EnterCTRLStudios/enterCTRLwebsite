@@ -560,6 +560,10 @@
 		padding: 5vh 0 0 0;
 	}
 
+	#nav-overlay .nav-contents a {
+		margin: 0 0 65px 0;
+	}
+
 	/* FOOTER */
 
 	#contact i {

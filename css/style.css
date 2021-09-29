@@ -80,7 +80,7 @@ table {
 
 .title-line {
 	background: rgba(255, 255, 255, 1);
-	border: solid rgba(255, 255, 255, 1) 1.5px;
+	border: solid rgba(255, 255, 255, 1) 2px;
 	box-shadow: 0 0 10px #ffffff75;
 	margin: 10px auto 30px auto;
 	width: 35vw;
@@ -918,14 +918,14 @@ a:hover {
 
 	margin: 0 0 90px 0;
 	padding: 0;
+
+	transition: 0.15s ease-in-out;
 }
 
-#nav-overlay .nav-contents a:active {
+#nav-overlay .nav-contents a:hover {
 	animation: shake 0.2s;
-	color: rgb(255, 128, 128);
-	text-shadow: 0 0 20px rgba(255, 151, 151, 0.664);
-
-	transition: 0.1s !important;
+	color: #ff2525;
+	text-shadow: 0 0 20px #ff2525;
 }
 
 #nav-overlay .nav-contents a:hover {
@@ -941,12 +941,12 @@ a:hover {
 	left: auto;
 	right: auto;
 
-	transition: 0.1s;
+	transition: 0.15s ease-in-out;
 }
 
-#nav-overlay .nav-contents a:active i {
-	color: #ff4040;
-	text-shadow: 0 0 15px #ff4848;
+#nav-overlay .nav-contents a:hover i {
+	color: #ffacac;
+	text-shadow: 0 0 15px #ffacac;
 	font-size: 10vw;
 }
 
@@ -1286,7 +1286,7 @@ footer a:hover {
 
 .line {
 	background: #ff9a22;
-	padding: 0.5px;
+	padding: 1px;
 }
 
 .image-break {
