@@ -1,0 +1,776 @@
+/* DESKTOP / LAPTOP RESPONSIVE CSS */
+
+@media only screen and (max-width: 3840px) {
+
+	.gif-overlay .character {
+		transform: scale(1.5);
+	}
+
+	.gif-overlay .gif {
+		transform: scale(2);
+	}
+
+}
+
+@media only screen and (max-width: 2560px) {
+
+	.gif-overlay .character {
+		transform: scale(1);
+	}
+
+	.gif-overlay .gif {
+		transform: scale(1.5);
+	}
+
+}
+
+@media only screen and (max-width: 2000px) {
+	
+	.gif-overlay .character {
+		transform: scale(0.75);
+	}
+
+	.gif-overlay .gif {
+		transform: scale(1);
+	}
+	
+	.master-width{
+
+	}
+
+	/* HOME */
+
+	
+
+	/* ABOUT */
+
+
+	
+	/* PROJECTS */
+}
+
+@media only screen and (max-width: 1800px) {
+
+	/* ABOUT */
+
+	
+
+}
+
+@media only screen and (max-width: 1700px) {
+	
+	.master-width{
+
+	}
+
+	/* NAV */
+
+
+
+	/* PROJ PAGES */
+
+	.proj-page-width {
+
+	}
+
+}
+
+@media only screen and (max-width: 1600px) {
+	
+	/* ABOUT */
+
+}
+
+@media only screen and (max-width: 1500px) {
+	
+	/* FIGHTERS */
+
+	.gif-overlay {
+		height: 500px;
+	}
+
+	.gif-overlay .character {
+		transform: scale(0.6);
+	}
+
+	.gif-overlay .gif {
+		transform: scale(1.2);
+	}
+
+	/* ABOUT */
+
+}
+
+@media only screen and (max-width: 1400px) {
+	/* SNIPERPUNK */
+
+	#fighters {
+		padding: 5.25vw 0;
+	}
+
+	#about-sp {
+		padding: 5.25vw 0 0 0;
+	}
+
+	/* TEAM */
+
+	.team-member img {
+		width: 80%;
+	}
+
+	.team-member p {
+		font-size: 1vw;
+		line-height: 1.5vw;
+	}
+
+	.team-member .bubble-icon {
+		width: 45px;
+		height: 45px;
+		font-size: 0.8em;
+	}
+
+	/* FOOTER */
+
+	#contact i {
+		font-size: 2em;
+	}
+
+	#contact img {
+		width: 33px;
+	}
+
+	footer h1 {
+		font-size: 2vw;
+		padding: 0 0 7px 0;
+	}
+
+	footer a {
+		font-size: 1.25vw;
+	}
+}
+
+
+@media only screen and (max-width: 1300px) {
+	
+	.button {
+		font-size: 1.1em;
+	}
+
+	/* HOME */
+
+	.move-up {
+		top: 0;
+	}
+	
+}
+
+/* TABLET RESPONSIVE CSS */
+
+@media only screen and (max-width: 1200px) {
+	
+	.gif-overlay {
+		height: 450px;
+	}
+
+	.gif-overlay .character {
+		transform: scale(0.475);
+	}
+
+	.img-page-break img {
+		transform: scale(0.75);
+	}
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+	/* TEAM */
+
+	.team-member h5 {
+		font-size: 1.2em;
+	}
+
+	/* FOOTER */
+
+	#contact {
+		padding: 25px 0;
+	}
+
+	footer {
+		padding: 5.5vw 0;
+	}
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.button{
+		font-size: 1em;
+	}
+
+	/* FIGHTERS */
+
+	.gif-overlay {
+		height: 475px;
+	}
+
+	.gif-overlay .character {
+		transform: scale(0.5);
+	}
+
+	.gif-overlay h1 {
+		font-size: 1em;
+	}
+
+	/* FOOTER */
+
+	#contact {
+		padding: 2vw 0;
+	}
+
+	#contact i {
+		font-size: 2.6vw;
+		margin: 0 1.5vw;
+	}
+
+	#contact img {
+		width: 2.8vw;
+		margin: 0 1.5vw;
+	}
+
+}
+
+@media only screen and (max-width: 900px) {
+
+}
+
+
+/* MOBILE */
+
+
+@media only screen and (max-width: 800px) {
+
+	.top-title {
+		font-size: 2.8vw;
+	}
+
+	.title {
+		font-size: 5.5vw;
+	}
+
+	.master-width {
+		width: 80%;
+	}
+
+	.img-page-break img {
+		transform: scale(0.5);
+	}
+
+	.button {
+		width: 100%;
+		padding: 3vw 0;
+	}
+	
+	.button:hover {
+		box-shadow: 0 0.5vw 1vw rgba(187, 36, 36, 0.5);
+		top: -1vw;
+	}
+
+	.button h6 {
+		font-size: 5.5vw;
+	}
+
+	/* NAV */
+
+	.mobile-nav .nav-contents {
+		font-size: 1em;
+	}
+
+	#navbar a {
+		padding: 0;
+	}
+
+	.mobile-nav .nav-contents i {
+		margin: 0 7px 0 0;
+		transform: scale(var(--ggs, 1.75));
+	}
+	
+	/* ABOUT */
+
+	#about h1 {
+		text-align: left;
+		font-size: 14vw;
+		padding: 12vw 0 0 0;
+	}
+
+	#about h2 {
+		text-align: left;
+		font-size: 6.5vw;
+		padding: 0 0 4vw 0;
+	}
+
+	#about h3 {
+		font-size: 4vw;
+		line-height: 6.4vw;
+		padding: 2vw 0 0 0;
+	}
+
+	#about .discord-cont {
+		margin: 14vw 0;
+	}
+
+	#about .discord-cont h1 {
+		font-size: 6vw;
+		padding: 0 0 1vw 0;
+	}
+
+	#about .discord-cont h2 {
+		font-size: 3.75vw;
+		padding: 0 0 1vw 0;
+	}
+
+	.team {
+		padding: 12vw 0 0 0;
+	}
+
+	.team-names {
+		justify-content: space-between;
+		margin: 5vw 0 0 0;
+		padding: 0 0 3.5vh 0;
+	}
+
+	.team-member {
+		width: 42%;
+		padding: 0;
+		margin: 4vw 0 10vw 0;
+	}
+
+	.team-member img {
+		width: 100%;
+	}
+
+	.team-member h1 {
+		font-size: 4vw;
+		line-height: 4.5vw;
+		margin: 3vw 0 1.4vw 0;
+	}
+
+	.team-member h2 {
+		font-size: 2.75vw;
+		line-height: 3.5vw;
+		letter-spacing: 0.6vw;
+		margin: 0 0 0 0;
+	}
+
+	.team-member p {
+		font-size: 2.25vw;
+		line-height: 3.5vw;
+		margin: 2vw 0 1.4vw 0;
+	}
+
+	/* FOOTER */
+
+	#contact {
+		padding: 4vw 0;
+	}
+
+	#contact i {
+		font-size: 6vw;
+		margin: 0 2.6vw;
+	}
+
+	#contact img {
+		width: 6.4vw;
+		margin: 0 2.6vw;
+	}
+
+	footer {
+		padding: 12vw 0;
+	}
+
+	footer h1 {
+		font-size: 5vw;
+	}
+
+	footer a {
+		font-size: 2.8vw;
+	}
+
+	/* FIGHTERS */
+	
+	#fighters {
+		padding: 8vw 0 12vw 0;
+	}
+
+	.deco {
+		margin-left: 0 !important;
+	}
+
+	.steam {
+		margin-right: 0 !important;
+	}
+
+	.cyber {
+		margin-left: 0 !important;
+	}
+
+	.ray {
+		margin-right: 0 !important;
+	}
+
+	.gif-overlay {
+		border: solid 1px #fff;
+	}
+
+	.gif-overlay h1 {
+		font-size: 3vw;
+	}
+
+	.gif-overlay-cont:hover .gif-overlay {
+		margin: 0 1vw;
+	}
+	
+	.gif-overlay .name-revealed {
+		font-size: 6vw;
+	}
+
+	.gif-overlay:hover .name-revealed {
+		font-size: 4vw;
+		line-height: 30px;
+	}
+
+	/* ABOUT SP */
+
+	#about-sp {
+		padding: 12vw 0 0 0;
+	}
+
+	#about-sp iframe {
+		height: 60vw;
+	}
+
+	.wishlist {
+		margin: 3vw 0 12vw 0;
+	}
+
+	.wishlist h1 {
+		font-size: 7.5vw;
+		margin: 2vw 0 1vw 0;
+	}
+
+	.wishlist h2 {
+		font-size: 3.75vw;
+		margin: 0 0 1.75vw 0;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+	.master-width {
+		width: 80%;
+	}
+
+	.mobile-nav {
+		height: 105px;
+	}
+
+	.mobile-nav .nav-contents .nav-logo h1 {
+		font-size: 7vw;
+	}
+
+	.mobile-nav .nav-contents .nav-logo h2 {
+		font-size: 4vw;
+	}
+
+	.mobile-page #sniperpunk .banner-art {
+		width: 290%;
+	}
+
+	.mobile-page .sp-logo {
+		top: 75vw;
+	}
+
+	.mobile-page .banner-tint {
+		height: 100vw;
+	}
+
+	.mobile-page #sniperpunk {
+		height: 100vw;
+	}
+
+	.top-title {
+		font-size: 3.2vw;
+	}
+
+	.title {
+		font-size: 6.75vw;
+	}
+
+}
+
+@media only screen and (max-width: 500px) {
+
+	.master-width {
+		width: 85%;
+	}
+
+	/* ABOUT */
+
+	#about h1 {
+		font-size: 15vw;
+	}
+
+	#about h2 {
+		font-size: 8vw;
+	}
+
+	#about h3 {
+		font-size: 5vw;
+		line-height: 1.6;
+	}
+
+	/* NAV */
+
+	.bars-cont {
+		width: 10vw;
+	}
+
+	#bars {
+		height: 30px;
+	}
+
+	.bar {
+		height: 2px;
+	}
+
+	.mobile-nav {
+		height: 90px;
+	}
+
+	.mobile-nav .nav-contents i {
+		transform: scale(var(--ggs, 1.2));
+	}
+
+	.mobile-nav .nav-contents a {
+		font-size: 1.2em;
+	}
+
+	#nav-overlay .nav-contents {
+		padding: 5vh 0 0 0;
+	}
+
+	/* FOOTER */
+
+	#contact i {
+		font-size: 1.8em;
+		margin: 0 3vw;
+	}
+
+	#contact img {
+		width: 1.9em;
+		margin: 0 3vw;
+	}
+
+	/* ABOUT SP */
+
+	.mobile-page .info-row h1 {
+		font-size: 2em;
+		line-height: 1.2;
+		padding: 2vw 0 3vw 0;
+	}
+
+	.mobile-page .info-row p {
+		padding: 5vw 0 10vw 0;
+		font-size: 1.5em;
+		line-height: 1.4;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+
+	.team .top-title {
+		font-size: 5vw;
+		margin: 0 0 0.5vw 0;
+	}
+
+	.team .title {
+		font-size: 9vw;
+		margin: 0 0 6vw 0;
+	}
+
+	.top-title {
+		font-size: 4.25vw;
+		margin: 0 0 0.5vw 0;
+	}
+
+	.title {
+		font-size: 7.5vw;
+		margin: 0 0 6vw 0;
+	}
+
+	.master-width {
+		width: 88%;
+	}
+
+	/* ABOUT */
+
+	#about .discord-cont {
+		margin: 18vw 0;
+	}
+
+	#about .discord-cont h1 {
+		font-size: 6.5vw;
+	}
+
+	#about .discord-cont h2 {
+		font-size: 4.4vw;
+	}
+
+	/* ABOUT SP */
+
+	.mobile-page .info-row h1 {
+		font-size: 1.7em;
+		line-height: 1.2;
+		padding: 2vw 0 3vw 0;
+	}
+
+	.mobile-page .info-row p {
+		padding: 5vw 0 10vw 0;
+		font-size: 1.2em;
+		line-height: 1.4;
+	}
+
+	/* NAV */
+
+	#bars {
+		height: 25px;
+	}
+
+	.mobile-nav {
+		height: 80px;
+	}
+
+	.mobile-nav .nav-contents a {
+		font-size: 1.1em;
+	}
+
+	.mobile-nav .nav-contents i {
+		transform: scale(var(--ggs, 1.1));
+	}
+
+	/* FOOTER */
+
+	footer {
+		padding: 20vw 0;
+	}
+
+	footer h1 {
+		font-size: 8vw;
+		padding: 0 0 3vw 0;
+	}
+
+	footer a {
+		font-size: 4.5vw;
+	}
+
+	#contact {
+		padding: 6vw 0;
+	}
+
+	#contact i {
+		margin: 0 3vw;
+		font-size: 2.7em;
+	}
+
+	#contact img {
+		margin: 0 3vw;
+		font-size: 1.5em;
+	}
+
+	/* TEAM */
+
+	.team-names {
+		justify-content: center;
+		padding: 0 0 8vh 0;
+	}
+
+	.team-member {
+		width: 100%;
+		margin: 8vw 0 14vw 0;
+	}
+
+	.team-member h1 {
+		margin: 7vw 0 5vw 0;
+		font-size: 8vw;
+	}
+
+	.team-member h2 {
+		margin: 0 0 0 0;
+		font-size: 5vw;
+		letter-spacing: 1.5vw;
+	}
+
+	.team-member p {
+		margin: 5vw 0 0 0;
+		font-size: 4vw;
+		line-height: 1.75;
+	}
+
+	.team-member img {
+		width: 85%;
+	}
+
+	/* FIGHTERS */
+
+	#fighters {
+		padding: 14vw 0 18vw 0;
+	}
+}
+
+@media only screen and (max-width: 385px) {
+
+	.top-title {
+		font-size: 5vw;
+		margin: 0 0 0.5vw 0;
+	}
+
+	/* FOOTER */
+
+	#contact {
+		padding: 7vw 0;
+	}
+
+	#contact i {
+		margin: 0 2.8vw;
+		font-size: 2.25em;
+	}
+
+	#contact img {
+		margin: 0 2.8vw;
+		font-size: 1.2em;
+	}
+
+	/* TEAM */ 
+
+	.team-member h1 {
+		font-size: 10vw;
+		margin: 10vw 0 8vw 0;
+	}
+
+	.team-member h2 {
+		font-size: 6vw;
+		letter-spacing: 1.5vw;
+	}
+
+	.team-member p {
+		margin: 6vw 0 0 0;
+		font-size: 5vw;
+		line-height: 1.75;
+	}
+
+}
+
+@media only screen and (max-height: 575px) and (max-width: 800px) {
+	
+}

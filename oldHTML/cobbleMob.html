@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Judah Avery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Font Awesome and Bootstrap -->
+  <script src="https://kit.fontawesome.com/f17e9d136a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Scrolling Functionality AND Open and Close Curtain Navigation -->
+  <script src="javascript/nav.js"></script>
+
+  <!-- Loading Mobile Pages -->
+  <script type="text/javascript">
+    if (screen.width > 1200) {
+      document.location = "cobble.html";
+    }
+
+    window.onresize = function (event) {
+      if (screen.width > 1200) {
+        document.location = "cobble.html";
+      }
+    };
+  </script>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Bootstrap Javascript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:900|Roboto:900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="images/averyIcon.png">
+</head>
+
+<body id="top">
+
+  <div id="navOverlay">
+
+    <nav class="navCont">
+      <a onclick="closeNav()" href="index.html#home">JUDAH AVERY</a>
+      <a onclick="closeNav()" href="index.html#projects">PROJECTS</a>
+      <a onclick="closeNav()" href="#contact">CONTACT</a>
+      <a onclick="closeNav()" target="_blank" href="downloads/Judah_Avery_Resume.pdf">RESUME</a>
+      <i onclick="delayCloseNav()" class="fas fa-times"></i>
+    </nav>
+
+  </div>
+
+  <div id="navbar">
+    <div class="width navInner">
+      <a href="#home">JUDAH AVERY</a>
+      <i onclick="openNav()" class="openNav fas fa-bars"></i>
+    </div>
+  </div>
+
+  <main class="black">
+    <div class="projectPage">
+      <h1 class="alignCenter title">COBBLE</h1>
+      <h6 class="alignCenter subTitle cobbleSubTitle">Lead Designer | Product Owner</h6>
+    </div>
+
+    <div class="full">
+      <img class="padBottom-20" src="images/cobbleGif_1.gif" alt="Cobble Gameplay Screenshot">
+    </div>
+
+    <div class="projectPage width overview">
+      <div class="description">
+        <div class="padBottom-20">
+          <h5 class="spaced"><strong>Team Size:</strong> 8 Members</h5>
+          <h5 class="spaced"><strong>Prototype Development Time:</strong> 48 Hours (Game Jam)</h5>
+          <h5 class="spaced"><strong>Full Development Time:</strong> Jan 2020 - April 2020</h5>
+          <h5 class="spaced"><strong>Development Tools:</strong> UE4, Photoshop, Blender</h5>
+          <h5 class="spaced"><strong>Genre:</strong> Puzzle Platformer</h5>
+          <h5 class="spaced"><strong>Platform:</strong> Windows PC</h5>
+        </div>
+        <div class="padBottom-20">
+          <h4 class="padBottom-10"><strong>My Contributions</strong></h4>
+          <ul>
+            <li class="listSpaced">- Designed systems and levels</li>
+            <li class="listSpaced">- Built levels and environments</li>
+            <li class="listSpaced">- Designed UI and interaction</li>
+            <li class="listSpaced">- Pipeline and design documentation</li>
+            <li class="listSpaced">- Organized and led the team</li>
+            <li class="listSpaced">- Ran meetings and weekly reviews</li>
+            <li class="listSpaced">- Led the creative direction</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="links">
+        <h4><strong>Project Links</strong>
+          <h4>
+            <ul>
+              <li><a target="_blank" href="downloads/cobbleVisualDesignDoc.pdf">Visual Design Document</a></li>
+              <li><a target="_blank" href="downloads/cobbleSystemsList.pdf">Systems List</a></li>
+              <li><a target="_blank" href="https://jollycoopco.itch.io/cobble">Play Cobble</a></li>
+            </ul>
+      </div>
+
+      <h3 class="subTitle">THE TEAM</h3>
+      <div class="team padTop">
+        <div>
+          <h5>Lead Programmer - <strong>Rhys Sullivan</strong><a target="_blank"
+              href="https://www.linkedin.com/in/rhyssullivan/" class="link"><i class="link fab fa-linkedin"></i></a>
+          </h5>
+          <h5>Programmer - <strong>Khalil Lyons</strong><a target="_blank"
+              href="https://www.linkedin.com/in/khalil-lyons/" class="link"><i class="link fab fa-linkedin"></i></a>
+          </h5>
+          <h5>Sound Designer - <strong>Jeremiah Cory</strong><a target="_blank"
+              href="https://www.linkedin.com/in/jeremiahcory/" class="link"><i class="link fab fa-linkedin"></i></a>
+          </h5>
+          <h5>Producer - <strong>Kendrick Ng-Yow</strong><a target="_blank"
+              href="https://www.linkedin.com/in/kendrickngyow/" class="link"><i class="link fab fa-linkedin"></i></a>
+          </h5>
+        </div>
+        <div>
+          <h5>Lead Artist - <strong>Alexis Sophabmixay</strong><a target="_blank"
+            href="https://www.linkedin.com/in/alexis-sophabmixay-3684601b7/" class="link"><i class="link fab fa-linkedin"></i></a>
+          </h5>
+          <h5>Artist - <strong>Michael Aucella</strong><a target="_blank"
+            href="https://www.linkedin.com/in/michaelaucella/" class="link"><i class="link fab fa-linkedin"></i></a>
+          </h5>
+          <h5>Artist - <strong>Morgan Miller</strong></h5>
+          <h5>Product Owner & Lead Designer <br><strong>Judah Avery</strong><a target="_blank"
+              href="https://www.linkedin.com/in/judahavery/" class="link"><i class="link fab fa-linkedin"></i></a></h5>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <main class="projectPage width">
+    <div class="paragraph">
+      <h4><strong>Project Overview</strong></h4>
+      <p>Cobble is a 2.5D side-scrolling puzzle-platformer game. The base game was created in under 48 hours for
+        the 2020 Global Game Jam, and afterward, our team of 8 students (myself included) continued to develop the
+        project further. Cobble began pre-production and the team continued development for a few months until we were no
+        longer able to continue. Through pre-production, we planned out the course of development and direction for Cobble.
+        This included lots of documentation, core systems implementation, art asset creation, and project management.
+        Even though most of the progress we made over these 3 months didn't take place in the game's
+        content itself, I gained a lot of valuable skills from Cobble.</p>
+      <br><br>
+      <h4><strong>Game Intent</strong></h4>
+      <p>Shortly after the game jam, we had other students play Cobble and they commonly complimented the game's
+        setting and aesthetics. This showed some key points of interest that Cobble had, so I decided to focus heavily
+        on those aspects and design the game around them. Because of the interest players had in the game's fantasy, I
+        wanted them to feel a strong curiosity towards the world Cobble took place in, so we ensured that the
+        art style, setting, story, and context were all very catchy and interesting from the get-go. The documented
+        plan for the full version of Cobble intended to take aspects from exploratory genres and incorporate them into
+        levels with platforming puzzles. Each puzzle the player solved would tell more about the underlying story of
+        the game, making discovery drive the gameplay.</p>
+    </div>
+  </main>
+
+  <div class="full">
+    <img src="images/cobblePlatform.png" alt="Cobble Gameplay Screenshot">
+  </div>
+
+  <main class="projectPage width">
+    <div class="paragraph">
+      <h4><strong>Designing The Core Systems</strong></h4>
+      <p>Many players who tested out the game shortly after the game jam seemed to enjoy the simple core puzzle
+        systems. The goal of each level is moving from point A to B and players must use the machines inside their
+        environment to traverse the level. Different machines have unique uses and movement patterns. For example,
+        platforms will move or rotate, while pistons will launch the player. However, these machines have two
+        functional requirements: power from a lever and a gear. Cobble can remove gears from machines to place them in
+        others and can switch levers to change which machines are provided with power. Players caught onto
+        these core mechanics very quickly and making the game's difficulty scalable meant that a simple concept needed
+        to be built upon in difficulty. I didn't want players to have a stressful experience, so it was important to
+        keep puzzles from feeling overwhelming or too complex. Stress would pull players out of the world and cause
+        frustration, taking away from having a strong world fantasy and curiosity.</p>
+      <p>These core mechanics (placing gears and switching levers) may have been sufficient for a small game jam, but
+        they weren't quite scalable enough to produce an hour or two of interesting puzzles. The issue here was adding
+        more complexity to the game while trying not to overwhelm players. One of the main interests players had was
+        the art style, setting, and context of the game. I didn't want to risk adding systems that added
+        unnecessary complexity and didn't build upon other already existing systems. To mitigate this risk, I decided
+        to rework the original core mechanics and add two additional ones. For starters, instead of switching the
+        transmission of power, levers would switch the flow of steam between machines steam hoses, which were attached
+        to a "steam box" (box that sends steam to machine pipes). Players could now remove the hose end from one steam
+        box and plug them into another, changing which mechanism would function on one side of the lever. The ability
+        to essentially re-wire which machines will function based on the lever adds even more depth to the underlying
+        core Systems without adding an entirely new concept to understand. After creating a visual design document
+        representing this change, I made sure the rest of the team figured the concept was easy to grasp. Future
+        levels could now incorporate "re-wiring" and build upon the player's existing knowledge of the underlying
+        mechanics from past levels without causing them to feel confused.</p>
+    </div>
+  </main>
+
+  <main class="black">
+    <div id="contact" class="contact">
+      <h6 class="title alignCenter">Get In Touch</h6>
+
+      <div class="subFooterCont">
+        <div class="contactInfo">
+          <h6 class="subTitle">Where To Find Me</h6>
+          <a class="contactItem link" target="_blank" href="https://www.linkedin.com/in/judahavery/">
+            <i class="link fab fa-linkedin-in"></i>
+            <h6>Linked In</h6>
+          </a>
+          <a class="contactItem link" target="_blank" href="https://twitter.com/avery_judah">
+            <i class="link fab fa-twitter"></i>
+            <h6>Twitter</h6>
+          </a>
+          <a class="contactItem link" target="_blank" href="https://judah-avery.itch.io/">
+            <i class="link fab fa-itch-io"></i>
+            <h6>itch.io</h6>
+          </a>
+        </div>
+
+        <div class="contactInfo">
+          <h6 class="subTitle">Send Me An Email</h6>
+          <div class="contactItem">
+            <i class="fas fa-envelope"></i>
+            <h6>judahbavery@gmail.com</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="darkBlack">
+    <div class="footerCont">
+      <h6>Website Designed and Developed by <strong>Judah Avery</strong></h6>
+    </div>
+  </footer>
+
+</body>
+
+</html>

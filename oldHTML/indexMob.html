@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Font Awesome and Bootstrap -->
+  <script src="https://kit.fontawesome.com/f17e9d136a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Scrolling Functionality AND Open and Close Curtain Navigation -->
+  <script src="javascript/nav.js"></script>
+
+  <!-- Loading Mobile Pages -->
+  <script type="text/javascript">
+    if (screen.width > 1200) {
+      document.location = "index.html";
+    }
+
+    window.onresize = function (event) {
+      if (screen.width > 1200) {
+        document.location = "index.html";
+      }
+    };
+  </script>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Bootstrap Javascript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:900|Roboto:900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="images/averyIcon.png">
+</head>
+
+<body>
+
+  <div id="navOverlay">
+
+    <nav class="navCont">
+      <a onclick="closeNav()" href="#home">JUDAH AVERY</a>
+      <a onclick="closeNav()" href="#projects">PROJECTS</a>
+      <a onclick="closeNav()" href="#contact">CONTACT</a>
+      <a onclick="closeNav()" target="_blank" href="downloads/Judah_Avery_Resume.pdf">RESUME</a>
+      <i onclick="delayCloseNav()" class="fas fa-times"></i>
+    </nav>
+
+  </div>
+
+  <div id="navbar">
+    <div class="width navInner">
+      <a href="#home">JUDAH AVERY</a>
+      <i onclick="openNav()" class="openNav fas fa-bars"></i>
+    </div>
+  </div>
+
+  <main id="home" class="home width">
+
+    <div class="centerBox">
+      <h1 class="homeHeader">Judah Avery</h1>
+      <p class="homeText">
+        I'm a <strong>game designer</strong> with a passion for crafting experiences through gameplay systems.
+        My strongest skills fall under <strong>systems design and UI/UX,</strong> but I'm capable of
+        filling any design-related role.
+
+      <p class="homeText">
+        I also enjoy <strong>graphic design and web design,</strong>
+        an example being this website which I built from scratch.
+      <div class="padTop-20 alignCenter">
+        <a class="button" href="#projects">Projects</a>
+        <a target="_blank" class="button" href="downloads/Judah_Avery_Resume.pdf">Resume</a>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="slideshow">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="cobble.html">
+            <img src="images/cobblePlatform.png" class="d-block w-100" alt="Cobble Gameplay Screenshot"></a>
+          <a href="cobble.html">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </a>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a target="_blank" href="https://www.youtube.com/watch?v=RmceM-9JSDE&t=">
+            <img src="images/fadeStart.png" class="d-block w-100" alt="FADE Gameplay Screenshot">
+            <a target="_blank" href="https://www.youtube.com/watch?v=RmceM-9JSDE&t=">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </a>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a target="_blank" href="https://judah-avery.itch.io/spring-fever">
+            <img src="images/springFeverShaded.png" class="d-block w-100" alt="Spring Fever Gameplay Screenshot">
+            <a target="_blank" href="https://judah-avery.itch.io/spring-fever">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </a>
+          </a>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+
+  <main id="projects" class="projects width">
+
+    <div class="projectItem">
+      <h1 class="subTitle">Spring Fever</h1>
+      <h4>Solo Project</h4>
+      <div class="tagsCont padBottom-10">
+        <div class="tag"> <h5>Systems</h5> </div>
+        <div class="tag"> <h5>UI/UX</h5> </div>
+        <div class="tag"> <h5>Programming</h5> </div>
+        <div class="tag"> <h5>Art / Animation</h5> </div>
+        <div class="tag"> <h5>Level Design</h5> </div>
+      </div>
+      <div class="overlayCont">
+        <a target="_blank" href="https://judah-avery.itch.io/spring-fever">
+          <img src="images/springFeverGameplay.png" alt="NEO Gameplay Screenshot">
+          <div class="overlay">
+            <h1>Play Spring Fever</h1>
+            <h4 class="overlaySubText">itch.io Page</h4>
+          </div>
+        </a>
+      </div>
+      <div class="description rightDisplay">
+        <p>Spring Fever is a game I created solo for the 2020 Unreal Spring Jam in under 5 days. The jam's theme was:
+          "What Is Hidden In Snow Comes Forth In The Thaw." I adapted that idea to a puzzle game where each time you move,
+          the environment around you and your character gradually melt. Play as a snowman trying to escape the treacherous
+          spring heat!</p>
+        <div class="alignLeft">
+          <a class="button projectButton" href="springFeverMob.html">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="projectItem">
+      <h1 class="subTitle">COBBLE</h1>
+      <h4>Lead Designer | Product Owner</h4>
+      <div class="tagsCont padBottom-10">
+        <div class="tag"> <h5>Systems</h5> </div>
+        <div class="tag"> <h5>UI/UX</h5> </div>
+        <div class="tag"> <h5>Level Design</h5> </div>
+      </div>
+      <div class="overlayCont">
+        <a target="_blank" href="https://jollycoopco.itch.io/cobble">
+          <img src="images/cobbleRunning.PNG" alt="Cobble Gameplay Screenshot">
+          <div class="overlay">
+            <h1>Play Cobble</h1>
+            <h4 class="overlaySubText">Game Jam itch.io</h4>
+          </div>
+        </a>
+      </div>
+      <div class="description">
+        <p>Cobble is a 2.5D puzzle-platformer taking place in an industrial steampunk world. Manipulate the mechanics of your
+          environment with your clocksmith abilities to traverse an enormous clocktower filled with different obstacles and mysteries.
+          The base game was created in under 48 hours for the 2020 Global Game Jam. After the jam, our team of 8 students
+          worked in pre-production on COBBLE for 3 months.</p>
+        <div class="alignLeft">
+          <a class="button projectButton" href="cobbleMob.html">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="projectItem">
+      <h1 class="subTitle">NEO</h1>
+      <h4>Solo Project</h4>
+      <div class="tagsCont padBottom-10">
+        <div class="tag"> <h5>Systems</h5> </div>
+        <div class="tag"> <h5>Level Design</h5> </div>
+        <div class="tag"> <h5>Programming</h5> </div>
+      </div>
+      <div class="overlayCont">
+        <a target="_blank" href="https://judah-avery.itch.io/neo">
+          <img src="images/neoGameplay.png" alt="NEO Gameplay Screenshot">
+          <div class="overlay">
+            <h1>Play NEO</h1>
+            <h4 class="overlaySubText">itch.io Page</h4>
+          </div>
+        </a>
+      </div>
+      <div class="description rightDisplay">
+        <p>NEO is a prototype for a top-down "Beat 'em Up" with an emphasis on fast-paced movement in combat. Throw and
+          retrieve your axe while evading enemies and obstacles. After being dropped into a maze of dangerous rooms, your goal
+          is to fight your way to the trophy room, completing the level. NEO was created for a game design class from my fall 2019 semester.</p>
+        <div class="alignLeft">
+          <a class="button projectButton" targer="_blank" href="neoMob.html">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="projectItem">
+      <h1 class="subTitle">FADE</h1>
+      <h4>Lead Designer | Lead Artist</h4>
+      <div class="tagsCont padBottom-10">
+        <div class="tag"> <h5>Systems</h5> </div>
+        <div class="tag"> <h5>Level Design</h5> </div>
+        <div class="tag"> <h5>Art / Animation</h5> </div>
+        <div class="tag"> <h5>Programming</h5> </div>
+      </div>
+      <div class="overlayCont">
+        <a target="_blank" href="https://www.youtube.com/watch?v=RmceM-9JSDE&t=">
+          <img src="images/conveyor_2.JPG" alt="FADE Gameplay Screenshot">
+          <div class="overlay">
+            <h1>Watch Gameplay</h1>
+          </div>
+        </a>
+      </div>
+      <div class="description leftDisplay">
+        <p>Fade is a short atmospheric puzzle game that takes place in a mysterious, eerie world.
+          With a focus on atmosphere, most of my work on FADE took place in level design, 3D art/animation, and environmental storytelling.
+          The game was developed in 5 months for the SkillsUSA Game Competition. Fade won 1st place
+          at the state level, and at the national level placed 7th.</p>
+        <div class="alignLeft">
+          <a class="button projectButton" target="_blank" href="https://www.youtube.com/watch?v=RmceM-9JSDE&t=">Watch Gameplay</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <main class="black">
+    <div id="contact" class="contact">
+      <h6 class="title alignCenter">Get In Touch</h6>
+
+      <div class="subFooterCont">
+        <div class="contactInfo">
+          <h6 class="subTitle">Where To Find Me</h6>
+          <a class="contactItem link" target="_blank" href="https://www.linkedin.com/in/judahavery/">
+            <i class="link fab fa-linkedin-in"></i>
+            <h6>Linked In</h6>
+          </a>
+          <a class="contactItem link" target="_blank" href="https://twitter.com/avery_judah">
+            <i class="link fab fa-twitter"></i>
+            <h6>Twitter</h6>
+          </a>
+          <a class="contactItem link" target="_blank" href="https://judah-avery.itch.io/">
+            <i class="link fab fa-itch-io"></i>
+            <h6>itch.io</h6>
+          </a>
+        </div>
+
+        <div class="contactInfo">
+          <h6 class="subTitle">Send Me An Email</h6>
+          <div class="contactItem">
+            <i class="fas fa-envelope"></i>
+            <h6>judahbavery@gmail.com</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="darkBlack">
+    <div class="footerCont">
+      <h6>Website Designed and Developed by <strong>Judah Avery</strong></h6>
+    </div>
+  </footer>
+
+</body>
+
+</html>

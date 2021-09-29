@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Judah Avery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Font Awesome and Bootstrap -->
+  <script src="https://kit.fontawesome.com/f17e9d136a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Scrolling Functionality -->
+  <script src="javascript/nav.js"></script>
+
+  <!-- Loading Mobile Pages -->
+  <script type="text/javascript">
+    if (screen.width <= 1200) {
+      document.location = "springFeverMob.html";
+    }
+
+    window.onresize = function (event) {
+      if (screen.width <= 1200) {
+        document.location = "springFeverMob.html";
+      }
+    };
+  </script>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Bootstrap Javascript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:900|Roboto:900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="images/averyIcon.png">
+</head>
+
+<body id="top">
+
+  <div id="navbar">
+    <nav class="navCont">
+      <a class="active" href="index.html#home">JUDAH AVERY</a>
+      <a href="index.html#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+      <a target="_blank" href="downloads/Judah_Avery_Resume.pdf">RESUME</a>
+    </nav>
+  </div>
+
+  <main class="black">
+    <div class="projectPage width">
+      <h1 class="alignCenter title">Spring Fever<h1>
+          <h6 class="alignCenter subTitle padBottom-20">Solo Project</h6>
+
+          <div class="overview">
+
+            <div class="descriptionRow">
+              <div class="padR-75">
+                <h5 class="spaced"><strong>Development Time:</strong> 5 Days (Game Jam)</h5>
+                <h5 class="spaced"><strong>Development Tools:</strong> UE4, Unreal Bluerpints, Photoshop, Blender</h5>
+                <h5 class="spaced"><strong>Genre:</strong> Puzzle Game</h5>
+                <h5 class="spaced"><strong>Platform:</strong> Windows PC</h5>
+              </div>
+
+              <div>
+                <h4 class="padBottom-10"><strong>Assets I Did Not Create:</strong></h4>
+                <ul>
+                  <li class="listSpaced">- Most Sound Effects</li>
+                  <li class="listSpaced">- Music Track</li>
+                  <li class="listSpaced">- Fonts</li>
+                  <li class="listSpaced">(Created everything else from scratch)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="padBottom-10 alignCenter">
+              <a target="_blank" class="button whiteButton" href="https://judah-avery.itch.io/spring-fever">Play Spring
+                Fever</a>
+              <a target="_blank" class="button whiteButton"
+                href="https://www.youtube.com/watch?v=67mYp1MAh0A&feature=youtu.be">Watch Gameplay</a>
+            </div>
+
+            <div>
+              <img class="imageBreak" src="images/springFeverGif_1.gif" alt="Cobble Gameplay Screenshot">
+            </div>
+          </div>
+  </main>
+
+  <main class="projectPage width">
+    <div class="description">
+      <div class="paragraph">
+        <h4><strong>Project Overview</strong></h4>
+        <p>Spring Fever is a short puzzle-game I created in under 5 days for the 2020 Unreal Spring Jam. The theme for
+          the game jam was: “What Is Hidden In Snow Comes Forth In The Thaw.” I adapted this theme to a puzzle game by
+          creating mechanics centered around the character and the level melting each time the player moves. Spring
+          Fever takes place on a handful of floating islands where the player must move a snowman to a flurry cloud
+          across the island to escape from the spring heat.</p>
+        <br>
+        <h4><strong>Working With 5 Days</strong></h4>
+        <p>I came up with the rudimentary concept for Spring Fever fairly quickly after seeing the jam theme. This
+          allowed me to get started on the main functionality of the game very early, using plain geometric shapes as
+          placeholder elements. However, at that time all I could imagine was a block of ice trying to reach some
+          arbitrary point in the level without melting. I had trouble coming up with an interesting context for these
+          mechanics that was within the scope of 5 days. Originally, I wanted players to control an animal that thrived
+          in a cold environment but was stuck in a warmer region during the spring season. This would require the animal
+          to escape north for survival in a colder ecosystem, tying in with the theme perfectly and giving players a
+          character they can feel empathetic towards. A snowman doesn’t exactly provide the same feeling of empathy,
+          it's not something we recognize as a living creature.</p>
+        <p>That animal concept still sounds more appealing to me than what I ended up with, but I didn’t have the time
+          to implement such a complex character. This would involve creating a model with more complicated parts and
+          would also require animations for leg movement. Realistically, if I wanted to have an animal in the game I
+          would have to use a pre-made asset. I considered this but decided to find a different solution because I
+          wanted to create as much as I possibly could by myself from scratch. Instead of using an animal, I went with
+          the snowman. I got away with creating a single looping animation of the snowman slouching back and
+          forth using a simple 3-bone rig. In the engine, I applied physics to the animations and bobbed the snowman
+          backward when it moved to provide feedback to the player. In half a day I had the snowman modeled, animated,
+          and implemented in the game. This was definitely a sacrifice I made but was also a vital decision that allowed
+          me to polish the game as much as I did. Without this thematic switch, I don't think Spring Fever would feel
+          good to play or look nearly as visually appealing.</p>
+        <img class="imageBreak" src="images/springFeverGameplay.png" alt="Spring Fever Gameplay Screenshot">
+        <br><br>
+        <h4><strong>Mini Postmortem</strong></h4>
+        <p>The systems I created for Spring Fever have lots of variability in puzzle design but I feel that I didn’t get
+          to make use of them in the ways I intended. By the time the systems were fully working and polished I had a
+          very limited amount of time to design, implement, and decorate levels. I ended up with only 6 levels, which
+          contained puzzles that were too easy and didn’t feel very rewarding to solve. Without the proper time to
+          design puzzles with a strong “aha” moment, the game felt a bit lacking. Not to mention all the other mechanics
+          I had to cut out, for example, blocked passages would require keys to unlock. I had the idea of freezing
+          items like keys or collectibles in ice blocks to create more steps to complete the level, making it less of a
+          straightforward path to the goal. However, yet again the time constraint didn’t allow for this and I had to
+          stick with only the most fundamental mechanics of the game.</p>
+        <p>With such a low quantity of levels that were also fairly simple to solve, I wish I had spent less time
+          polishing and more time designing fun and interesting puzzles. This would have made the game feel much more
+          rewarding to play, but I’m still happy with the end product. It may not have won, but Spring Fever did get an
+          honorable mention in the game jam, putting it among the top 30 games of the total 276 submissions.</p>
+        <div class="toTop alignCenter">
+          <a class="button" href="#top">Back To Top</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <main class="black">
+    <div id="contact" class="contact">
+      <h6 class="title alignCenter">Get In Touch</h6>
+
+      <div class="subFooterCont">
+        <div class="contactInfo">
+          <h6 class="subTitle">Where To Find Me</h6>
+          <a class="contactItem link" target="_blank" href="https://www.linkedin.com/in/judahavery/">
+            <i class="link fab fa-linkedin-in"></i>
+            <h6>Linked In</h6>
+          </a>
+          <a class="contactItem link" target="_blank" href="https://twitter.com/avery_judah">
+            <i class="link fab fa-twitter"></i>
+            <h6>Twitter</h6>
+          </a>
+          <a class="contactItem link" target="_blank" href="https://judah-avery.itch.io/">
+            <i class="link fab fa-itch-io"></i>
+            <h6>itch.io</h6>
+          </a>
+        </div>
+
+        <div class="contactInfo">
+          <h6 class="subTitle">Send Me An Email</h6>
+          <div class="contactItem">
+            <i class="fas fa-envelope"></i>
+            <h6>judahbavery@gmail.com</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="darkBlack">
+    <div class="footerCont">
+      <h6>Website Designed and Developed by <strong>Judah Avery</strong></h6>
+    </div>
+  </footer>
+
+</body>
+
+</html>
