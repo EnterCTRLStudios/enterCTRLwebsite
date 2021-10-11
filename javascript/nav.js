@@ -13,9 +13,6 @@ var fixedNavHeight = 0;
 var delayNav = 175;
 
 document.addEventListener("DOMContentLoaded", function () {
-  //Make team-members the equal value as width
-  setImgWidthToHeight();
-
   //Is this a mobile page?
   mobilePage = isMobilePage();
 
@@ -31,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 window.onresize = function (event) {
-  setImgWidthToHeight();
   scrolling();
 };
 
@@ -57,10 +53,6 @@ document.addEventListener("click", (event) => {
     closeNav();
   }
 });
-
-function setImgWidthToHeight() {
-  document.getElementById("team-img-cont").style.height = document.getElementById('team-img-cont').offsetWidth + "px";
-}
 
 function isMobilePage() {
   var pathname = window.location.pathname;
