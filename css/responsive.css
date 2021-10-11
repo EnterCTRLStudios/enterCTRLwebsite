@@ -114,7 +114,7 @@
 
 	/* TEAM */
 
-	.team-member img {
+	.team-member div {
 		width: 80%;
 	}
 
@@ -345,7 +345,7 @@
 		margin: 4vw 0 10vw 0;
 	}
 
-	.team-member img {
+	.team-member div {
 		width: 100%;
 	}
 
@@ -721,7 +721,7 @@
 		line-height: 1.75;
 	}
 
-	.team-member img {
+	.team-member div {
 		width: 85%;
 	}
 

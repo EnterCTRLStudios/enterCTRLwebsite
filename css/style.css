@@ -1340,7 +1340,7 @@ footer a:hover {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 
 	margin: 3vw 0;
 }
@@ -1358,7 +1358,7 @@ footer a:hover {
 	font-weight: lighter;
 	text-align: center;
 	margin: 2vw 0 4vw 0;
-	padding: 0 1.15vw;
+	padding: 0 2.75vw;
 }
 
 .team-member h1 {
@@ -1384,8 +1384,18 @@ footer a:hover {
 	line-height: 1.4vw;
 }
 
-.team-member img {
+.team-member div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+
+	width: 100%;
 	border-radius: 100%;
+}
+
+.team-member img {
+	position: relative;
 	width: 100%;
 }
 
