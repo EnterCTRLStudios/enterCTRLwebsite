@@ -923,10 +923,22 @@ a:hover {
 	transition: 0.15s ease-in-out;
 }
 
-.mob-a-active {
-	animation: shake 0.2s;
+#nav-overlay .nav-contents .crosshair-shake {
+	animation: shake 0.175s;
+	animation-iteration-count: 1;
 	color: #ff2525;
-	text-shadow: 0 0 20px #ff2525;
+	text-shadow: 0 0 15px #ff2525;
+
+	transition: 0.15s ease-in-out;
+}
+
+#nav-overlay .nav-contents .crosshair-shake i {
+	visibility: visible;
+	font-size: 1.5em;
+	color: #ffacac;
+	text-shadow: 0 0 15px #ffacac;
+
+	transition: 0.05s ease-in-out;
 }
 
 #nav-overlay .nav-contents a:hover {
@@ -962,17 +974,19 @@ a:hover {
 }
 
 .hidden-nav-overlay .nav-contents {
-	margin: 0 0 0 0 !important;
+	margin: -70vh 0 0 0 !important;
 	justify-content: flex-start !important;
+
+	transition: 0.5s !important;
 }
 
 .hidden-nav-overlay .nav-contents a {
 	text-shadow: 0 0 0px rgba(255, 255, 255, 0) !important;
 	pointer-events: none;
-	margin: 0 0 25vh 0 !important;
+	margin:  0 30vh 0 !important;
 	color: rgb(255, 255, 255, 0) !important;
 
-	transition: 0.2s !important;
+	transition: 0.3s !important;
 }
 
 .hidden-navbar {

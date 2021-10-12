@@ -1,7 +1,6 @@
-var navbar = document.getElementById("navbar");
-
 var navOpen = false;
 var mobilePage = false;
+var navbarName = "";
 var navIsFixed;
 
 var currentScrollPos = window.pageYOffset;
@@ -10,14 +9,23 @@ var hideNavOnScrollDist = 100;
 
 var staticNavHeight = 0;
 var fixedNavHeight = 0;
-var delayNav = 175;
+var delayNav = 200;
+var linkAnimTime = 175;
+var hideNavTopDelay = 750;
 
 document.addEventListener("DOMContentLoaded", function () {
   //Is this a mobile page?
   mobilePage = isMobilePage();
 
+  if (mobilePage) {
+    navbarName = "mobile-nav";
+  }
+  else {
+    navbarName = "navbar";
+  }
+
   //Wait to setup after we know if its mobile or not
-  if (!mobilePage) staticNavHeight = document.getElementById("navbar").offsetHeight;
+  if (!mobilePage) staticNavHeight = document.getElementById(navbarName).offsetHeight;
 
   if (mobilePage) {
     fixNav();
@@ -76,17 +84,17 @@ function scrolling() {
     //DESKTOP PAGES
     if (!mobilePage) {
       if (!navIsFixed) {
-        if (window.scrollY >= document.getElementById("sniperpunk").offsetHeight - document.getElementById("navbar").offsetHeight) {
+        if (window.scrollY >= document.getElementById("sniperpunk").offsetHeight - document.getElementById(navbarName).offsetHeight) {
           fixNav();
         }
       }
       //If the page is not past that number, then set back to normal
       else if (navIsFixed) {
-        if (currentScrollPos > document.getElementById("sniperpunk").offsetHeight - document.getElementById("navbar").offsetHeight + hideNavOnScrollDist) {
+        if (currentScrollPos > document.getElementById("sniperpunk").offsetHeight - document.getElementById(navbarName).offsetHeight + hideNavOnScrollDist) {
           checkNavScroll(false);
         }
 
-        if (window.scrollY < document.getElementById("sniperpunk").offsetHeight - document.getElementById("navbar").offsetHeight) {
+        if (window.scrollY < document.getElementById("sniperpunk").offsetHeight - document.getElementById(navbarName).offsetHeight) {
           staticNav();
         }
       }
@@ -108,21 +116,10 @@ function scrolling() {
 function checkNavScroll(isNavMobile) {
   //HIDE NAV ON SCROLL DOWN WHEN NAV IS FIXED TO TOP OF SCREEN
   if (currentScrollPos > prevScrollPos) {
-    if (!isNavMobile) {
-      document.getElementById("navbar").style.margin = -1 * document.getElementById("navbar").offsetHeight + "px 0 0 0";
-    }
-    else {
-      console.log("HIDE NAVBAR");
-      document.getElementById("mobile-nav").style.margin = -1 * document.getElementById("mobile-nav").offsetHeight + "px 0 0 0";
-    }
+    hideNavbar();
+
   } else if (currentScrollPos < prevScrollPos) {
-    if (!isNavMobile) {
-      document.getElementById("navbar").style.margin = "0";
-    }
-    else {
-      console.log("SHOW NAVBAR");
-      document.getElementById("mobile-nav").style.margin = "0";
-    }
+    showNavbar();
   }
 }
 
@@ -131,19 +128,19 @@ function fixNav() {
   navIsFixed = true;
   if (!mobilePage) {
     //Save the height for when we reset the nav back to static at the top
-    staticNavHeight = document.getElementById("navbar").offsetHeight;
+    staticNavHeight = document.getElementById(navbarName).offsetHeight;
 
-    document.getElementById("navbar").classList.add("fixed-nav");
-    document.getElementById("navbar").classList.remove("static-nav");
-    document.getElementById("navbar").style.top = 0 + "px";
+    document.getElementById(navbarName).classList.add("fixed-nav");
+    document.getElementById(navbarName).classList.remove("static-nav");
+    document.getElementById(navbarName).style.top = 0 + "px";
   }
   else {
     //Save the height for when we reset the nav back to static at the top
-    staticNavHeight = document.getElementById("mobile-nav").offsetHeight;
+    staticNavHeight = document.getElementById(navbarName).offsetHeight;
 
-    document.getElementById("mobile-nav").classList.add("mob-fixed-nav");
-    document.getElementById("mobile-nav").classList.remove("mob-static-nav");
-    document.getElementById("mobile-nav").style.top = 0 + "px";
+    document.getElementById(navbarName).classList.add("mob-fixed-nav");
+    document.getElementById(navbarName).classList.remove("mob-static-nav");
+    document.getElementById(navbarName).style.top = 0 + "px";
   }
 }
 
@@ -153,17 +150,30 @@ function staticNav() {
 
   if (!mobilePage) {
     //Save the height of last fixed nav
-    fixedNavHeight = document.getElementById("navbar").offsetHeight;
+    fixedNavHeight = document.getElementById(navbarName).offsetHeight;
 
-    document.getElementById("navbar").classList.add("static-nav");
-    document.getElementById("navbar").classList.remove("fixed-nav");
-    document.getElementById("navbar").style.top = document.getElementById("sniperpunk").offsetHeight - staticNavHeight + "px";
+    document.getElementById(navbarName).classList.add("static-nav");
+    document.getElementById(navbarName).classList.remove("fixed-nav");
+    document.getElementById(navbarName).style.top = document.getElementById("sniperpunk").offsetHeight - staticNavHeight + "px";
   }
   else {
-    document.getElementById("mobile-nav").classList.add("mob-static-nav");
-    document.getElementById("mobile-nav").classList.remove("mob-fixed-nav");
-    document.getElementById("mobile-nav").style.top = "0px";
+    document.getElementById(navbarName).classList.add("mob-static-nav");
+    document.getElementById(navbarName).classList.remove("mob-fixed-nav");
+    document.getElementById(navbarName).style.top = "0px";
   }
+}
+
+// For the little shake on each link
+function mobileLinkClick(link) {
+  link.classList.add("crosshair-shake");
+
+  setTimeout(() => {
+    link.classList.remove("crosshair-shake");
+  }, linkAnimTime);
+
+  setTimeout(() => {
+    if (window.scrollY > hideNavOnScrollDist) hideNavbar();
+  }, hideNavTopDelay);
 }
 
 // Open
@@ -184,7 +194,7 @@ function openNav() {
 function closeNav() {
   //If navIsFixed, then set it to the top of screen
   if (navIsFixed) {
-    document.getElementById("mobile-nav").style.margin = "0px";
+    document.getElementById(navbarName).style.margin = "0px";
   }
 
   document.getElementById("nav-overlay").classList.add("hidden-nav-overlay");
@@ -197,13 +207,21 @@ function delayCloseNav() {
   setTimeout(() => {
     //If navIsFixed, then set it to the top of screen
     if (navIsFixed) {
-      document.getElementById("mobile-nav").style.margin = "0px";
+      document.getElementById(navbarName).style.margin = "0px";
     }
 
     document.getElementById("nav-overlay").classList.add("hidden-nav-overlay");
     document.getElementById("bars").classList.remove("x-bars");
     navOpen = false;
   }, delayNav);
+}
+
+function hideNavbar() {
+  document.getElementById(navbarName).style.margin = -1 * document.getElementById(navbarName).offsetHeight + "px 0 0 0";
+}
+
+function showNavbar() {
+  document.getElementById(navbarName).style.margin = "0";
 }
 
 // Select all links with hashes
@@ -222,11 +240,12 @@ $('a[href*="#"]')
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       // Does a scroll target exist?
-      if (target.length) {
+      if ($target.length > 0) {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
+
         $('html, body').animate({
-          scrollTop: target.offset().top - getElementById("navbar").offset().top
+          scrollTop: target.offset().top - getElementById(navbarName).offset().top
         }, 1000, function () {
           // Callback after animation
           // Must change focus!
@@ -238,6 +257,9 @@ $('a[href*="#"]')
             $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
           };
+
+          //Push navbar back up the screen
+
         });
       }
     }
