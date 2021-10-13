@@ -429,6 +429,10 @@
 	.gif-overlay h1 {
 		font-size: 3vw;
 	}
+
+	.gif-overlay-cont:hover .gif-overlay {
+		margin: 0 1vw;
+	}
 	
 	.gif-overlay .name-revealed {
 		font-size: 6vw;
