@@ -164,12 +164,15 @@ function staticNav() {
 }
 
 // For the little shake on each link
-function mobileLinkClick(link) {
-  link.classList.add("crosshair-shake");
+function navLinkPress(link) {
 
-  setTimeout(() => {
-    link.classList.remove("crosshair-shake");
-  }, linkAnimTime);
+  if (mobilePage) {
+    link.classList.add("crosshair-shake");
+
+    setTimeout(() => {
+      link.classList.remove("crosshair-shake");
+    }, linkAnimTime);
+  }
 
   setTimeout(() => {
     if (window.scrollY > hideNavOnScrollDist) hideNavbar();
