@@ -974,7 +974,7 @@ a:hover {
 }
 
 .hidden-nav-overlay .nav-contents {
-	margin: -70vh 0 0 0 !important;
+	margin: -0vh 0 0 0 !important;
 	justify-content: flex-start !important;
 
 	transition: 0.5s !important;
