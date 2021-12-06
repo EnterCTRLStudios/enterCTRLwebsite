@@ -902,6 +902,8 @@ a:hover {
 	align-items: center !important;
 		
 	padding: 12vh 0 0 0;
+
+	transition: 0.55s !important;
 }
 
 #nav-overlay .nav-contents a {
@@ -974,7 +976,7 @@ a:hover {
 }
 
 .hidden-nav-overlay .nav-contents {
-	margin: -0vh 0 0 0 !important;
+	margin: -30vh 0 0 0 !important;
 	justify-content: flex-start !important;
 
 	transition: 0.5s !important;
