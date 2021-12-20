@@ -1487,10 +1487,10 @@ footer a:hover {
 }
 
 .button:hover {
+	transform: translate(0, -6px);
 	box-shadow: 0 0.2vw 0.5vw rgba(187, 36, 36, 0.5);
 
 	position: relative;
-	top: -0.2vw;
 	right: auto;
 	bottom: auto;
 	left: 0;
@@ -1503,7 +1503,6 @@ footer a:hover {
 	box-shadow: none;
 	
 	position: relative;
-	top: 0;
 	right: auto;
 	bottom: auto;
 	left: 0;
