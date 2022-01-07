@@ -280,6 +280,14 @@
 		font-size: 5.5vw;
 	}
 
+	#about-sp iframe {
+		border: none;
+	}
+
+	#about-sp iframe:hover {
+		box-shadow: none;
+	}
+	
 	/* NAV */
 
 	.mobile-nav .nav-contents {
@@ -355,7 +363,7 @@
 
 	.team-member h1 {
 		font-size: 4vw;
-		line-height: 4.5vw;
+		line-height: 35px;
 		margin: 3vw 0 1.4vw 0;
 	}
 
@@ -509,6 +517,11 @@
 
 	.title {
 		font-size: 6.75vw;
+	}
+
+	.team-member h1 {
+		margin: 2vw 0 1vw 0;
+		line-height: 5vw;
 	}
 
 }
@@ -687,13 +700,13 @@
 	}
 
 	#contact i {
-		margin: 0 3vw;
-		font-size: 2.7em;
+		margin: 0 4vw;
+		font-size: 2.2em;
 	}
 
 	#contact img {
-		margin: 0 3vw;
-		font-size: 1.5em;
+		margin: 0 4vw;
+		font-size: 1.25em;
 	}
 
 	/* TEAM */
@@ -709,7 +722,8 @@
 	}
 
 	.team-member h1 {
-		margin: 7vw 0 5vw 0;
+		margin: 7vw 0 3vw 0;
+		line-height: 35px;
 		font-size: 8vw;
 	}
 
@@ -763,7 +777,7 @@
 
 	.team-member h1 {
 		font-size: 10vw;
-		margin: 10vw 0 8vw 0;
+		margin: 10vw 0 4vw 0;
 	}
 
 	.team-member h2 {
