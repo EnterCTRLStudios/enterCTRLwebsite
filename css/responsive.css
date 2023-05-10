@@ -7,7 +7,7 @@
 	}
 
 	.gif-overlay .gif {
-		transform: scale(1.6);
+		transform: scale(2.75);
 	}
 
 }
@@ -19,7 +19,7 @@
 	}
 
 	.gif-overlay .gif {
-		transform: scale(1.25);
+		transform: scale(2.5);
 	}
 
 }
@@ -31,7 +31,7 @@
 	}
 
 	.gif-overlay .gif {
-		transform: scale(1);
+		transform: scale(2.2);
 	}
 	
 	.master-width{
